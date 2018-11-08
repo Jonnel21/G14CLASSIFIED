@@ -23,10 +23,10 @@ class MainMenu(Menu):
     def __init__(self):
         super(MainMenu, self).__init__("COOL GAME")
         items = [
-            ( MenuItem('New Game', self.on_quit ) ),
-            ( MenuItem('Load', self.on_quit ) ),
-            ( MenuItem('Settings', self.on_quit ) ),
-            ( MenuItem('High Scores', self.on_quit ) ),
+            (MenuItem('New Game', self.on_quit)),
+            (MenuItem('Load', self.on_quit)),
+            (MenuItem('Settings', self.on_quit)),
+            (MenuItem('High Scores', self.on_quit)),
         ]
         self.create_menu(items, selected_effect=shake(),
                           unselected_effect=shake_back(),
